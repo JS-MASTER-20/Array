@@ -1,4 +1,54 @@
+// sort() Method - Key Points
 
+// Syntax:
+
+    // array.sort(compareFunction);
+
+
+  // Arguments:
+
+    // 1 argument (optional): compareFunction — Defines the sort order.
+
+    //    The compareFunction takes two arguments (a, b) and should return:
+
+    //    Negative value: If a should come before b
+
+    //    Positive value: If b should come before a
+
+    //    Zero: If a and b are equal
+
+  // Return Value:
+
+      // Modifies the original array and returns the same array.
+
+      // If no compareFunction is provided, array is sorted lexicographically.
+
+      // Default Sorting (No compareFunction):
+
+      // Strings are sorted lexicographically (alphabetically).
+
+      // Numbers are sorted as strings (incorrect order).
+
+  // Sorting Numbers:
+
+      // Use a custom comparator: array.sort((a, b) => a - b);
+
+      // Ascending order: a - b, Descending order: b - a.
+
+  // Sorting Objects:
+
+      // Use a custom comparator for object properties: array.sort((a, b) => a.property - b.property);
+
+  // Case Sensitivity:
+
+      // By default, sort() is case-sensitive (capital letters come before lowercase).
+
+      // For case-insensitive sorting:
+      // array.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+
+      // Stable Sort (ECMAScript 2019):
+
+  // Stable sorting: Equal elements retain their relative order after sorting.
 
 
 // 1. Lexicographical Sorting (Strings)
