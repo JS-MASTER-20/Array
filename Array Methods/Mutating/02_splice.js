@@ -1,5 +1,7 @@
 // splice() Method Cheat Sheet
 
+        // The splice() method in JavaScript modifies an array by adding, removing, or replacing elements at a specified index and returns the removed elements as a new array. It changes the original array directly.
+
 // Syntax:
 
 //      array.splice(startIndex, deleteCount, item1, item2, ...);
